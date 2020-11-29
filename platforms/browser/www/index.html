@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Lab 4 FOL_USERNAME</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div>   
+            <button id="take-picture-button" class="btn-primary">Take a picture</button><br><br>   
+            <button id="get-image-button" class="btn-primary">Retrieve Image</button><br><br>
+            <button id="get-image-edit-button" class="btn-primary">Retrieve Image for Edit</button><br><br>   
+            <button id="get-video-button" class="btn-primary">Retrieve Video</button><br><br>
+            <button id="get-any-media-button" class="btn-primary">Retrieve Any Media</button><br><br>
+        </div> 
+            <div id="CameraOutput" style ="word-wrap:break-word;">Picture</div>
+    </div>
+    <div class="wrap2">
+        <div>
+            Media Status:
+            <div id ='media-status'></div>
+            The songs duration is:
+            <div id ='duration'></div>
+        </div>
+        <div>
+            <h1>Play Some Music!</h1>   
+            <button id="play-media-button" class="btn-primary">PLAY</button>   
+            <button id="pause-media-button" class="btn-primary">PAUSE</button>
+            <button id="stop-media-button" class="btn-primary">STOP</button><br><br>   
+            <button id="increase-volume-button" class="btn-primary">INCREASE VOLUME</button><br><br>
+            <button id="mute-volume-button" class="btn-primary">MUTE</button><br><br>
+            <button id="restart-button" class="btn-primary">RESTART</button><br><br>
+        </div> 
+    </div>
+    <div class="wrap3">
+        <div id ='capture-output'></div>
+        <div> 
+            <button id="capture-audio-button" class="btn-primary">Capture Audio</button>   
+            <button id="capture-image-button" class="btn-primary">Capture Image</button><br><br>  
+            <button id="capture-video-button" class="btn-primary">Capture Video</button><br><br>  
+        </div> 
+    </div>   
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
